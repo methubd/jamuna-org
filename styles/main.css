@@ -45,6 +45,13 @@ nav{
     width: 60%;
 }
 
+/* photo album */
+.photo-album{
+    margin: auto;
+    width: 500px;
+    font-family: var(--primary-font);
+}
+
 @media only screen and (max-width: 576px) {
     .banner-container{
         width: 100%;
@@ -52,6 +59,9 @@ nav{
     header img{
         width: 100%;
         height: 100%;
+    }
+    .photo-album{
+        width: 100%;
     }
         
 }
