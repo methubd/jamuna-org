@@ -37,4 +37,12 @@ nav{
     font-family: var(--primary-font);
     font-weight: 600;
     margin: auto;
+    width: 60%;
+}
+
+@media only screen and (max-width: 576px) {
+    .banner-container{
+        width: 100%;
+    }
+        
 }
