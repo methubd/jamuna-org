@@ -1,0 +1,36 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Lobster&family=Open+Sans&family=Poppins:wght@500&family=Work+Sans:wght@400;700&display=swap');
+
+/* Common styles */
+
+*{
+    margin: 0 0 0 0;
+}
+:root{
+    --primary-font: 'Hind Siliguri';
+    --secondary-font: 'Lobster'
+    --favorite-font: 'Poppins'
+}
+
+body {
+    font-family: 'Hind Siliguri';
+    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+.title-heading{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 600;
+}
+.container-fluid .navbar-brand{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: brown;
+}
+.banner-container{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    margin: auto;
+}
