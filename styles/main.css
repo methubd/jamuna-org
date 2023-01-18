@@ -10,6 +10,7 @@
     --primary-font: 'Hind Siliguri';
     --secondary-font: 'Lobster'
     --favorite-font: 'Poppins'
+    --primary-color: brown;
 }
 
 body {
@@ -20,9 +21,9 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 header{
-    background-image: linear-gradient(to right, rgb(19, 14, 0) , rgba(32, 32, 31, 0.39)), url('/images/bg-01.jpg');
+    /* background-image: linear-gradient(to right, rgb(19, 14, 0) , rgba(32, 32, 31, 0.39)), url('/images/bg-01.jpg');
     height: 100vh;
-    background-size: cover;
+    background-size: cover; */
 }
 nav{
     font-family: var(--primary-font);
@@ -52,6 +53,99 @@ nav{
     font-family: var(--primary-font);
 }
 
+/* header image */
+.header-image{
+    background-image: linear-gradient(to right, rgb(19, 14, 0) , rgba(32, 32, 31, 0.39)), url(/images/banner.jpg);
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+.header-image h1{
+    padding-top: 50px;
+    color: white;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.header-image p{
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+.header-image .btn{
+    font-size: 1.3rem;
+}
+.remark-text{
+    color: white;
+    background-color: rgb(252, 94, 2);
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* second title */
+.second-title{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    font-family: var(--primary-font);
+    margin-top: 2rem;
+}
+
+/* activity */
+.activity-head{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 30px;
+
+}
+.activity-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+.our-activity .service-logo{
+    color: rgb(61, 61, 61);
+    font-size: 3rem;
+    padding: 20px;
+    transition: 0.3s;
+}
+.our-activity .service-logo:hover{
+    color: rgb(252, 94, 2);
+}
+.our-activity h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.our-activity p{
+    font-size: 18px;
+}
+
+
+/* footer */
+footer{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+}
+
+/* Modal */
+.container{
+    font-family: var(--primary-font);
+}
+
+/* Small Device Responsive */
 @media only screen and (max-width: 576px) {
     .banner-container{
         width: 100%;
@@ -63,5 +157,35 @@ nav{
     .photo-album{
         width: 100%;
     }
+    .activity-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 90%;
+    }
+    .header-image{
+        height: 50vh;
+    }
+    .header-image h1{
+        padding-top: 40px;
+        color: white;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+    .header-image p{
+        line-height: 2.5rem;
+    }
         
+}
+/* Medium Device Responsive */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .activity-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+.hide{
+    display: none;
 }
